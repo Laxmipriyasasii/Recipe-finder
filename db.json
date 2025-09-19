@@ -1,0 +1,330 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Burger",
+      "mealType": "lunch",
+      "img": "burger.jpg",
+      "difficulty": "easy",
+      "description": "A classic juicy beef burger with fresh lettuce, tomato, and cheese.",
+      "author": "by Food18",
+      "total_ingredients": 7,
+      "calories": 450,
+      "level": "easy",
+      "ingredients": [
+        "1 lb ground beef",
+        "4 burger buns",
+        "4 slices cheddar cheese",
+        "1 tomato, sliced",
+        "Lettuce leaves",
+        "4 tbsp mayonnaise",
+        "Salt and pepper to taste"
+      ],
+      "preparation": [
+        "Season the ground beef with salt and pepper and form into 4 patties.",
+        "Preheat grill or pan over medium-high heat and cook patties for 4-5 minutes each side or until desired doneness.",
+        "Toast the burger buns lightly on the grill.",
+        "Spread mayonnaise on the bottom half of each bun.",
+        "Place the cooked patties on the buns, then top each with a slice of cheese, tomato, and lettuce.",
+        "Cover with the top half of the buns and serve immediately."
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Paneer Butter Masala",
+      "mealType": "dinner",
+      "img": "Pannerbutter.jpg",
+      "difficulty": "hard",
+      "description": "Rich and creamy Indian curry made with paneer cubes in buttery tomato sauce.",
+      "author": "by Food18",
+      "total_ingredients": 10,
+      "calories": 350,
+      "level": "hard",
+      "ingredients": [
+        "250g paneer cubes",
+        "2 tbsp butter",
+        "1 cup tomato puree",
+        "1/2 cup cream",
+        "1 tbsp ginger-garlic paste",
+        "1 tsp garam masala",
+        "1 tsp red chili powder",
+        "1 tsp coriander powder",
+        "Salt to taste",
+        "Fresh coriander leaves for garnish"
+      ],
+      "preparation": [
+        "Heat butter in a pan and sauté ginger-garlic paste until fragrant.",
+        "Add tomato puree and cook until oil separates.",
+        "Add spices and salt, cook for 2 minutes.",
+        "Add paneer cubes and mix well.",
+        "Pour in cream, simmer for 5 minutes.",
+        "Garnish with coriander leaves and serve hot."
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Salad",
+      "mealType": "lunch",
+      "img": "salad.jpg",
+      "difficulty": "easy",
+      "description": "A fresh mixed greens salad with seasonal vegetables and a light dressing.",
+      "author": "by Food18",
+      "total_ingredients": 6,
+      "calories": 120,
+      "level": "easy",
+      "ingredients": [
+        "2 cups mixed greens",
+        "1 cucumber, sliced",
+        "1 tomato, chopped",
+        "1/4 cup shredded carrots",
+        "2 tbsp olive oil",
+        "1 tbsp lemon juice"
+      ],
+      "preparation": [
+        "Combine mixed greens, cucumber, tomato, and carrots in a bowl.",
+        "Whisk olive oil and lemon juice to make dressing.",
+        "Pour dressing over salad and toss gently.",
+        "Serve fresh."
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Chicken Fry",
+      "mealType": "dinner",
+      "img": "chickenfry.jpg",
+      "difficulty": "medium",
+      "description": "Spicy and crispy fried chicken pieces marinated with special spices.",
+      "author": "by Food18",
+      "total_ingredients": 8,
+      "calories": 400,
+      "level": "medium",
+      "ingredients": [
+        "500g chicken pieces",
+        "1 cup yogurt",
+        "2 tsp red chili powder",
+        "1 tsp turmeric powder",
+        "1 tbsp ginger-garlic paste",
+        "Salt to taste",
+        "Oil for frying",
+        "1 cup all-purpose flour"
+      ],
+      "preparation": [
+        "Marinate chicken with yogurt, spices, and salt for at least 2 hours.",
+        "Coat marinated chicken with flour.",
+        "Heat oil in a pan and fry chicken until golden and cooked through.",
+        "Drain on paper towels and serve hot."
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Soup",
+      "mealType": "snacks",
+      "img": "soup.jpg",
+      "difficulty": "easy",
+      "description": "A warm and comforting vegetable soup perfect for cold days.",
+      "author": "by Food18",
+      "total_ingredients": 7,
+      "calories": 150,
+      "level": "easy",
+      "ingredients": [
+        "2 cups mixed vegetables (carrots, beans, peas)",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "4 cups vegetable broth",
+        "1 tsp salt",
+        "1/2 tsp black pepper",
+        "2 tbsp olive oil"
+      ],
+      "preparation": [
+        "Heat olive oil in a pot and sauté onion and garlic.",
+        "Add mixed vegetables and cook for 5 minutes.",
+        "Pour in vegetable broth and bring to boil.",
+        "Simmer for 20 minutes until vegetables are tender.",
+        "Season with salt and pepper and serve warm."
+      ]
+    },
+    {
+      "id": 6,
+      "name": "French Fries",
+      "mealType": "snacks",
+      "img": "frenchfries.jpg",
+      "difficulty": "easy",
+      "description": "Golden and crispy french fries, a perfect snack or side dish.",
+      "author": "by Food18",
+      "total_ingredients": 3,
+      "calories": 300,
+      "level": "easy",
+      "ingredients": [
+        "4 large potatoes",
+        "Oil for deep frying",
+        "Salt to taste"
+      ],
+      "preparation": [
+        "Peel and cut potatoes into thin sticks.",
+        "Soak potatoes in cold water for 30 minutes, then drain and pat dry.",
+        "Heat oil in a deep fryer and fry potatoes until golden and crispy.",
+        "Drain excess oil, season with salt, and serve hot."
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Pancake",
+      "mealType": "breakfast",
+      "img": "pancake.jpg",
+      "difficulty": "medium",
+      "description": "Fluffy pancakes served with syrup and fresh fruits for a delightful breakfast.",
+      "author": "by Food18",
+      "total_ingredients": 8,
+      "calories": 350,
+      "level": "medium",
+      "ingredients": [
+        "1 cup all-purpose flour",
+        "1 tbsp sugar",
+        "1 tsp baking powder",
+        "1/2 tsp baking soda",
+        "1 cup milk",
+        "1 egg",
+        "2 tbsp melted butter",
+        "Maple syrup and fresh fruits for serving"
+      ],
+      "preparation": [
+        "Mix flour, sugar, baking powder, and baking soda in a bowl.",
+        "Whisk milk, egg, and melted butter in another bowl.",
+        "Combine wet and dry ingredients until smooth.",
+        "Heat a non-stick pan and pour batter to form pancakes.",
+        "Cook until bubbles form, then flip and cook other side.",
+        "Serve warm with syrup and fruits."
+      ]
+    },
+    {
+    "id": 8,
+    "name": "Biriyani",
+    "mealType": "dinner",
+    "img": "biriyani.jpg",
+    "difficulty": "hard",
+    "description": "A fragrant and flavorful Indian rice dish cooked with spices, meat, and herbs.",
+    "author": "by Food18",
+    "total_ingredients": 12,
+    "calories": 550,
+    "level": "hard",
+    "ingredients": [
+      "2 cups basmati rice",
+      "500g chicken pieces",
+      "1 cup yogurt",
+      "2 large onions, thinly sliced",
+      "2 tomatoes, chopped",
+      "4 cloves garlic, minced",
+      "1 inch ginger, minced",
+      "2 green chilies, slit",
+      "1/4 cup fresh coriander leaves",
+      "1/4 cup fresh mint leaves",
+      "2 tsp biriyani masala powder",
+      "Salt to taste"
+    ],
+    "preparation": [
+      "Wash and soak basmati rice for 30 minutes.",
+      "Heat oil in a large pan and fry onions until golden brown. Set half aside for garnishing.",
+      "Add garlic, ginger, and green chilies to the pan and sauté.",
+      "Add chicken pieces and cook until browned.",
+      "Mix in yogurt, tomatoes, biriyani masala powder, salt, coriander, and mint leaves. Cook until chicken is tender.",
+      "In a separate pot, boil water and cook rice until 70% done. Drain and set aside.",
+      "Layer the chicken mixture and rice in a heavy-bottomed pot, starting with chicken at the bottom.",
+      "Top with fried onions and cover tightly.",
+      "Cook on low heat for 25-30 minutes to allow flavors to meld.",
+      "Serve hot with raita or salad."
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Masala Dosa",
+    "mealType": "breakfast",
+    "img": "dosa.jpg",
+    "difficulty": "medium",
+    "description": "Crispy fermented rice crepes stuffed with spiced potato filling.",
+    "author": "by Food18",
+    "total_ingredients": 10,
+    "calories": 300,
+    "level": "medium",
+    "ingredients": [
+      "1 cup rice",
+      "1/2 cup urad dal (split black gram)",
+      "2 large potatoes, boiled and mashed",
+      "1 onion, finely chopped",
+      "1 tsp mustard seeds",
+      "1 tsp turmeric powder",
+      "2 green chilies, chopped",
+      "1 tbsp oil",
+      "Salt to taste",
+      "Fresh coriander leaves for garnish"
+    ],
+    "preparation": [
+      "Soak rice and urad dal separately for 6-8 hours.",
+      "Grind soaked ingredients into a smooth batter and ferment overnight.",
+      "Heat oil in a pan, add mustard seeds. When they splutter, add onions, turmeric, green chilies, and potatoes.",
+      "Cook for 5 minutes, season with salt and garnish with coriander.",
+      "Heat a non-stick pan, pour batter and spread thinly to form a dosa.",
+      "Place the potato filling inside, fold and cook for 2 more minutes.",
+      "Serve hot with chutney and sambar."
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Chocolate Chip Cookies",
+    "mealType": "snacks",
+    "img": "chip.jpg",
+    "difficulty": "easy",
+    "description": "Soft and chewy cookies loaded with chocolate chips, perfect for a sweet treat.",
+    "author": "by Food18",
+    "total_ingredients": 8,
+    "calories": 250,
+    "level": "easy",
+    "ingredients": [
+      "1 cup all-purpose flour",
+      "1/2 tsp baking soda",
+      "1/4 tsp salt",
+      "1/2 cup unsalted butter, softened",
+      "1/2 cup brown sugar",
+      "1/4 cup white sugar",
+      "1 egg",
+      "1 cup chocolate chips"
+    ],
+    "preparation": [
+      "Preheat oven to 350°F (175°C).",
+      "Mix flour, baking soda, and salt in a bowl.",
+      "In another bowl, cream butter and sugars until smooth.",
+      "Add egg and mix well.",
+      "Gradually add dry ingredients to wet ingredients, then fold in chocolate chips.",
+      "Drop spoonfuls onto baking sheet and bake for 10-12 minutes.",
+      "Cool on wire rack and enjoy."
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Vegetable Stir Fry",
+    "mealType": "lunch",
+    "img": "stir.jpg",
+    "difficulty": "easy",
+    "description": "Quick and healthy stir-fried mixed vegetables with soy sauce and garlic.",
+    "author": "by Food18",
+    "total_ingredients": 7,
+    "calories": 180,
+    "level": "easy",
+    "ingredients": [
+      "1 cup broccoli florets",
+      "1 carrot, sliced",
+      "1 bell pepper, sliced",
+      "1/2 cup snap peas",
+      "2 cloves garlic, minced",
+      "2 tbsp soy sauce",
+      "1 tbsp vegetable oil"
+    ],
+    "preparation": [
+      "Heat oil in a wok or pan over high heat.",
+      "Add garlic and sauté until fragrant.",
+      "Add all vegetables and stir fry for 5-7 minutes until tender-crisp.",
+      "Pour in soy sauce and toss to coat evenly.",
+      "Serve hot with rice or noodles."
+    ]
+  }
+  ]
+}

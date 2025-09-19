@@ -1,0 +1,192 @@
+.search {
+    border: 1px solid #050504;
+    
+   
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 15px;
+}
+.showAll{
+  border-radius: 50%;
+ padding: 10px;
+ color:white;
+ background-color: rgba(253, 29, 29, 1);
+ cursor: pointer;
+  
+}
+.stack{
+    padding-bottom:20px;
+}
+.flex{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.log{
+        display: flex;
+    align-items: center;
+    padding:0px 20px;
+    gap:10px;
+
+}
+.logo{
+    font-size: 50px;
+    color:rgba(253, 29, 29, 1)
+}
+.title{
+    letter-spacing: 2px;
+}.title1{
+     color:#9ea3a3;
+    
+}
+.title2{
+     margin-top: 0 !important;
+}
+.view{
+    background-color:rgba(253, 29, 29, 1) !important ;
+    text-transform: capitalize !important;
+    margin-bottom: 15px !important;
+}
+.view:hover{
+  color:rgba(253, 29, 29, 1) !important ;  
+  background-color: white !important;
+  border:1px solid rgba(253, 29, 29, 1) !important;
+}
+
+.search:focus {
+   border: 2px solid #1a1919 !important;
+    outline: none;
+}
+.border-bottom{
+    
+ border-bottom: 2px solid #9ea3a3;
+}
+.recipe-list{
+    padding:20px;
+}
+.finder{
+    color:#833AB4;
+    font-weight: 300;
+}
+.selected{
+    color:rgba(253, 29, 29, 1) !important;
+    border-bottom: 2px solid rgba(253, 29, 29, 1);
+}
+.width{
+    width:100%;
+}
+.banner{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    display: flex;
+    height:300px;
+    color:white;
+    position: relative;
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 80%, rgba(252, 176, 69, 1) 100%);
+
+}
+.nav-list{
+padding: 0px 10px;
+color:#9ea3a3;
+font-weight: 400;
+}
+.nav-list:hover{
+color:#833AB4;
+}
+
+.text-decoration{
+    text-decoration: none;
+}
+
+
+
+.text-center {
+    text-align: center;
+}
+
+input:focus {
+    border: 1px solid orange !important;
+}
+.sub-head{
+    color:#9ea3a3;
+}
+
+.text-search {
+    height: 100vh;
+}
+
+.recipess {
+    padding: 0px 120px;
+}
+.pad{
+    padding:20px;
+    font-size: large;
+    text-transform: capitalize;
+}
+.pad:hover{
+background-color: #ebeeee;
+border-bottom:2px solid rgba(253, 29, 29, 1);
+color: rgba(253, 29, 29, 1);
+}
+.flex{
+    display: flex;
+}
+.error{
+    color:red;
+    font-size: 30px;
+    padding: 10px;
+}
+.err-text{
+    letter-spacing: 1px;
+}
+.space-between{
+     justify-content: space-between;
+}
+.red{
+    color:rgb(219, 10, 10);
+}
+   
+.recipe-item {
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+     transition: transform 0.3s ease; 
+}
+.recipe-item:hover{
+    transform: scale(1.05); /* Slight zoom on hover */
+  cursor: pointer;
+}
+
+input:focus {
+    border-color: blue;
+    background-color: white;
+    /* keep background same */
+}
+
+/* To remove autofill background in Chrome */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    box-shadow: 0 0 0 1000px white inset !important;
+    -webkit-text-fill-color: black !important;
+}
+
+.food-image {
+    width: 100%;
+    height: 219px;
+}
+.padding{
+    padding: 10px !important;
+}
+@media (max-width:899px) {
+.food-image {
+    width: 100%;
+    height: auto;
+}
+    
+}
