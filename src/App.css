@@ -44,10 +44,18 @@
 .title2{
      margin-top: 0 !important;
 }
+.pad-10{
+ padding: 10px;
+}
+.pad-10-top{
+    padding: 0px 10px 10px 10px;
+}
+
 .view{
     background-color:rgba(253, 29, 29, 1) !important ;
     text-transform: capitalize !important;
     margin-bottom: 15px !important;
+    margin-left:10px !important;
 }
 .view:hover{
   color:rgba(253, 29, 29, 1) !important ;  
@@ -102,16 +110,16 @@ color:#833AB4;
 .text-decoration{
     text-decoration: none;
 }
-
+.orangish{
+    color: rgba(253, 29, 29, 1);
+}
 
 
 .text-center {
     text-align: center;
 }
 
-input:focus {
-    border: 1px solid orange !important;
-}
+
 .sub-head{
     color:#9ea3a3;
 }

@@ -1,0 +1,96 @@
+ .login-container{
+overflow-y: hidden;
+ }
+ .register{
+      width:70%;
+    height: 99vh;
+  object-fit: cover;
+  position: relative;
+  float:right;
+  transform: scaleX(-1);
+  /* Optionally, you can add some smooth transition */
+  
+ }
+.image{
+    width:70%;
+    height: 99vh;
+  object-fit: cover;
+  position: relative;
+   
+  
+}
+.css-4vvya4-MuiFormControl-root{
+  width:60% !important
+}
+.css-5h82ro-MuiInputBase-root-MuiInput-root::after{
+  border-bottom: 2px solid rgba(253, 29, 29, 1) !important;
+}
+
+.login-form{
+    background-color: white;
+    width:50%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+ right: 0;
+ 
+ 
+}
+
+.register-form{
+    background-color: white;
+    width:50%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+  left: 0;
+}
+.login-text{
+    font-weight: 900;
+}
+.input-field{
+width: 60%
+}
+.input-field.css-1xp5r68-MuiFormControl-root-MuiTextField-root{
+  margin-top:10px;  
+}
+
+ .input-field .css-5h82ro-MuiInputBase-root-MuiInput-root::after{
+    border-bottom: 2px solid rgba(253, 29, 29, 1)
+    
+    
+}
+.css-1ew92b2-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+    color:rgba(253, 29, 29, 1) !important
+}
+.css-2hy7sk-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+    color:#9ea3a3 !important
+}
+.login-btn{
+color;:white !important;
+background-color: rgba(253, 29, 29, 1) !important;
+margin:20px !important;
+border-radius: 20px !important;
+font-size: medium !important;
+}
+.mb-4{
+    margin-top: 1rem;
+}
+.purple{
+    color:#833AB4
+}
+.mb-5{
+    margin-bottom: 2rem;
+}
+.form{
+    
+     height: 100%;  /* Ensure the container takes the full height */
+  display: flex;  /* Enable flexbox */
+  justify-content: center;  /* Horizontal centering */
+  align-items: center; 
+  flex-direction: column; /* Stack children vertically */
+}
+.login-register{
+    width: 100%;
+    text-align: center;
+}

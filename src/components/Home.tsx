@@ -121,9 +121,10 @@ export default function Home() {
 
                                 <Grid size={{ xs: 12, md: 6, lg: 4 }} className="c recipe-item">
                                     <img src={`../src/assets/${data.img}`} className='food-image'></img>
-                                    <div className='flex space-between'><h3 className='ternary'>{data.name}</h3>{save.some((item) => item.id === data.id) ? <FavoriteIcon className='favorite-icon red' onClick={() => addtofavorite(data.id)} /> : <FavoriteBorderOutlinedIcon className='favorite-icon ternary' onClick={() => addtofavorite(data.id)} />}
+                                    <div className='flex space-between pad-10'><h3 className='ternary'>{data.name}</h3>
+                                    {save.some((item) => item.id === data.id) ? <FavoriteIcon className='favorite-icon red' onClick={() => addtofavorite(data.id)} /> : <FavoriteBorderOutlinedIcon className='favorite-icon ternary' onClick={() => addtofavorite(data.id)} />}
 </div>
-                                    <p className='ternary'>{data.description}</p>
+                                    <p className='ternary pad-10-top'>{data.description}</p>
                                     <Button variant="contained" className='view' onClick={() => handleClick(data.id)} >View recipe</Button>
                                 </Grid>
                             )
