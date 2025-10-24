@@ -1,9 +1,12 @@
+ 
  .login-container{
 overflow-y: hidden;
+height:100vh
  }
  .register{
       width:70%;
-    height: 99vh;
+    /* height: 99vh; */
+    height: 100vh;
   object-fit: cover;
   position: relative;
   float:right;
@@ -13,7 +16,7 @@ overflow-y: hidden;
  }
 .image{
     width:70%;
-    height: 99vh;
+    height: 100vh;
   object-fit: cover;
   position: relative;
    
@@ -67,9 +70,9 @@ width: 60%
     color:#9ea3a3 !important
 }
 .login-btn{
-color;:white !important;
+color:white !important;
 background-color: rgba(253, 29, 29, 1) !important;
-margin:20px !important;
+/* margin:20px !important; */
 border-radius: 20px !important;
 font-size: medium !important;
 }

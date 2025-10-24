@@ -1,6 +1,6 @@
 export const loginField = [
     {
-      id: 'name',
+      id: 'email',
       label: 'Email',
       type: 'email',
       className: 'input-field'
@@ -12,29 +12,52 @@ export const loginField = [
       className: 'input-field'
     }
 ]
+export const navBar=[
+  {id:'home',
+  link:'/',
+  title:'home',
+  },
+  {id:'recipes',
+  link:'/',
+  title:'recipes'
+  },
+  {id:'about',
+    link:'/',
+    title:'about'
+  },{
+    id:'login',
+    link:'/login',
+    title:'logout',
+    className:'nav-list logi'
+  }
+]
 export const registerField = [
     {
       id: 'name',
       label: 'UserName',
       type: 'text',
-      className: 'input-field'
+      className: 'input-field',
+      icon:'Avatar',
     },
       {
       id: 'email',
       label: 'Email',
       type: 'email',
-      className: 'input-field'
+      className: 'input-field',
+      icon:'EmailIcon',
     },
     {
       id: 'password',
       label: 'Password',
       type: 'password',
-      className: 'input-field'
+      className: 'input-field',
+      icon:'pass',
     },
      {
-      id: 'password',
+      id: 'Confirm_password',
       label: 'Confirm Password',
       type: 'password',
-      className: 'input-field'
+      className: 'input-field',
+      icon:'pass',
     }
 ]

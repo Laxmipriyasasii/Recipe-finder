@@ -1,6 +1,7 @@
 import {Stack} from '@mui/material';
 import { Link } from 'react-router-dom';
 import '../Style/Header.css';
+import { navBar } from '../Data/loginRegiter';
 
 export default function Header() {
   return (
@@ -12,11 +13,10 @@ export default function Header() {
                     </span>
                     <h1 className=' title title1'>RECIPE <span className='finder'>FINDER</span></h1>
                 </div></Link>
-                <ul style={{padding:'0px 30px',display:'flex'}}>
-                    <Link to='/' className='text-decoration'><h3 className='nav-list'>Home</h3></Link>
-                     <Link to='/' className='text-decoration'><h3 className='nav-list'>Recipe</h3></Link>
-                      <Link to='/' className='text-decoration'><h3 className='nav-list'>About</h3></Link>
-                       <Link to='/' className='text-decoration'><h3 className='nav-list'>Services</h3></Link>
+                <ul style={{padding:'6px 30px',display:'flex',margin: '0'}}>
+                       {navBar.map((navList)=>(
+                        <Link to={navList.link} key={navList.id} className='text-decoration'><h3  className={navList.className || 'nav-list'}>{navList.title}</h3></Link>
+                       ))}
                 </ul>
                </Stack>
 

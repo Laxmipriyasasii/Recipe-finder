@@ -5,7 +5,6 @@ import '../Style/SingleRecipe.css'
 import axios from 'axios';
 import CountUp from "react-countup";
 
-
 type Recipe = {
   id: string;
   name: string;
@@ -48,7 +47,7 @@ export default function SingleRecipe() {
               <h1 className='sub-list1'>{recipe?.total_ingredients !== undefined && (
     <CountUp start={0} end={recipe.total_ingredients} duration={2} />
   )}</h1>
-              <p className='ternary'>Ingredients</p>
+              <p className='ternary pad-10'>Ingredients</p>
 
             </Grid>
             <Grid size={4} className='sub-list text-center' >

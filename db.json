@@ -1,7 +1,7 @@
 {
   "recipes": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Burger",
       "mealType": "lunch",
       "img": "burger.jpg",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Paneer Butter Masala",
       "mealType": "dinner",
       "img": "Pannerbutter.jpg",
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Salad",
       "mealType": "lunch",
       "img": "salad.jpg",
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Chicken Fry",
       "mealType": "dinner",
       "img": "chickenfry.jpg",
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Soup",
       "mealType": "snacks",
       "img": "soup.jpg",
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "French Fries",
       "mealType": "snacks",
       "img": "frenchfries.jpg",
@@ -167,7 +167,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Pancake",
       "mealType": "breakfast",
       "img": "pancake.jpg",
@@ -197,134 +197,157 @@
       ]
     },
     {
-    "id": 8,
-    "name": "Biriyani",
-    "mealType": "dinner",
-    "img": "biriyani.jpg",
-    "difficulty": "hard",
-    "description": "A fragrant and flavorful Indian rice dish cooked with spices, meat, and herbs.",
-    "author": "by Food18",
-    "total_ingredients": 12,
-    "calories": 550,
-    "level": "hard",
-    "ingredients": [
-      "2 cups basmati rice",
-      "500g chicken pieces",
-      "1 cup yogurt",
-      "2 large onions, thinly sliced",
-      "2 tomatoes, chopped",
-      "4 cloves garlic, minced",
-      "1 inch ginger, minced",
-      "2 green chilies, slit",
-      "1/4 cup fresh coriander leaves",
-      "1/4 cup fresh mint leaves",
-      "2 tsp biriyani masala powder",
-      "Salt to taste"
-    ],
-    "preparation": [
-      "Wash and soak basmati rice for 30 minutes.",
-      "Heat oil in a large pan and fry onions until golden brown. Set half aside for garnishing.",
-      "Add garlic, ginger, and green chilies to the pan and sauté.",
-      "Add chicken pieces and cook until browned.",
-      "Mix in yogurt, tomatoes, biriyani masala powder, salt, coriander, and mint leaves. Cook until chicken is tender.",
-      "In a separate pot, boil water and cook rice until 70% done. Drain and set aside.",
-      "Layer the chicken mixture and rice in a heavy-bottomed pot, starting with chicken at the bottom.",
-      "Top with fried onions and cover tightly.",
-      "Cook on low heat for 25-30 minutes to allow flavors to meld.",
-      "Serve hot with raita or salad."
-    ]
-  },
-  {
-    "id": 9,
-    "name": "Masala Dosa",
-    "mealType": "breakfast",
-    "img": "dosa.jpg",
-    "difficulty": "medium",
-    "description": "Crispy fermented rice crepes stuffed with spiced potato filling.",
-    "author": "by Food18",
-    "total_ingredients": 10,
-    "calories": 300,
-    "level": "medium",
-    "ingredients": [
-      "1 cup rice",
-      "1/2 cup urad dal (split black gram)",
-      "2 large potatoes, boiled and mashed",
-      "1 onion, finely chopped",
-      "1 tsp mustard seeds",
-      "1 tsp turmeric powder",
-      "2 green chilies, chopped",
-      "1 tbsp oil",
-      "Salt to taste",
-      "Fresh coriander leaves for garnish"
-    ],
-    "preparation": [
-      "Soak rice and urad dal separately for 6-8 hours.",
-      "Grind soaked ingredients into a smooth batter and ferment overnight.",
-      "Heat oil in a pan, add mustard seeds. When they splutter, add onions, turmeric, green chilies, and potatoes.",
-      "Cook for 5 minutes, season with salt and garnish with coriander.",
-      "Heat a non-stick pan, pour batter and spread thinly to form a dosa.",
-      "Place the potato filling inside, fold and cook for 2 more minutes.",
-      "Serve hot with chutney and sambar."
-    ]
-  },
-  {
-    "id": 10,
-    "name": "Chocolate Chip Cookies",
-    "mealType": "snacks",
-    "img": "chip.jpg",
-    "difficulty": "easy",
-    "description": "Soft and chewy cookies loaded with chocolate chips, perfect for a sweet treat.",
-    "author": "by Food18",
-    "total_ingredients": 8,
-    "calories": 250,
-    "level": "easy",
-    "ingredients": [
-      "1 cup all-purpose flour",
-      "1/2 tsp baking soda",
-      "1/4 tsp salt",
-      "1/2 cup unsalted butter, softened",
-      "1/2 cup brown sugar",
-      "1/4 cup white sugar",
-      "1 egg",
-      "1 cup chocolate chips"
-    ],
-    "preparation": [
-      "Preheat oven to 350°F (175°C).",
-      "Mix flour, baking soda, and salt in a bowl.",
-      "In another bowl, cream butter and sugars until smooth.",
-      "Add egg and mix well.",
-      "Gradually add dry ingredients to wet ingredients, then fold in chocolate chips.",
-      "Drop spoonfuls onto baking sheet and bake for 10-12 minutes.",
-      "Cool on wire rack and enjoy."
-    ]
-  },
-  {
-    "id": 11,
-    "name": "Vegetable Stir Fry",
-    "mealType": "lunch",
-    "img": "stir.jpg",
-    "difficulty": "easy",
-    "description": "Quick and healthy stir-fried mixed vegetables with soy sauce and garlic.",
-    "author": "by Food18",
-    "total_ingredients": 7,
-    "calories": 180,
-    "level": "easy",
-    "ingredients": [
-      "1 cup broccoli florets",
-      "1 carrot, sliced",
-      "1 bell pepper, sliced",
-      "1/2 cup snap peas",
-      "2 cloves garlic, minced",
-      "2 tbsp soy sauce",
-      "1 tbsp vegetable oil"
-    ],
-    "preparation": [
-      "Heat oil in a wok or pan over high heat.",
-      "Add garlic and sauté until fragrant.",
-      "Add all vegetables and stir fry for 5-7 minutes until tender-crisp.",
-      "Pour in soy sauce and toss to coat evenly.",
-      "Serve hot with rice or noodles."
-    ]
-  }
+      "id": "8",
+      "name": "Biriyani",
+      "mealType": "dinner",
+      "img": "biriyani.jpg",
+      "difficulty": "hard",
+      "description": "A fragrant and flavorful Indian rice dish cooked with spices, meat, and herbs.",
+      "author": "by Food18",
+      "total_ingredients": 12,
+      "calories": 550,
+      "level": "hard",
+      "ingredients": [
+        "2 cups basmati rice",
+        "500g chicken pieces",
+        "1 cup yogurt",
+        "2 large onions, thinly sliced",
+        "2 tomatoes, chopped",
+        "4 cloves garlic, minced",
+        "1 inch ginger, minced",
+        "2 green chilies, slit",
+        "1/4 cup fresh coriander leaves",
+        "1/4 cup fresh mint leaves",
+        "2 tsp biriyani masala powder",
+        "Salt to taste"
+      ],
+      "preparation": [
+        "Wash and soak basmati rice for 30 minutes.",
+        "Heat oil in a large pan and fry onions until golden brown. Set half aside for garnishing.",
+        "Add garlic, ginger, and green chilies to the pan and sauté.",
+        "Add chicken pieces and cook until browned.",
+        "Mix in yogurt, tomatoes, biriyani masala powder, salt, coriander, and mint leaves. Cook until chicken is tender.",
+        "In a separate pot, boil water and cook rice until 70% done. Drain and set aside.",
+        "Layer the chicken mixture and rice in a heavy-bottomed pot, starting with chicken at the bottom.",
+        "Top with fried onions and cover tightly.",
+        "Cook on low heat for 25-30 minutes to allow flavors to meld.",
+        "Serve hot with raita or salad."
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Masala Dosa",
+      "mealType": "breakfast",
+      "img": "dosa.jpg",
+      "difficulty": "medium",
+      "description": "Crispy fermented rice crepes stuffed with spiced potato filling.",
+      "author": "by Food18",
+      "total_ingredients": 10,
+      "calories": 300,
+      "level": "medium",
+      "ingredients": [
+        "1 cup rice",
+        "1/2 cup urad dal (split black gram)",
+        "2 large potatoes, boiled and mashed",
+        "1 onion, finely chopped",
+        "1 tsp mustard seeds",
+        "1 tsp turmeric powder",
+        "2 green chilies, chopped",
+        "1 tbsp oil",
+        "Salt to taste",
+        "Fresh coriander leaves for garnish"
+      ],
+      "preparation": [
+        "Soak rice and urad dal separately for 6-8 hours.",
+        "Grind soaked ingredients into a smooth batter and ferment overnight.",
+        "Heat oil in a pan, add mustard seeds. When they splutter, add onions, turmeric, green chilies, and potatoes.",
+        "Cook for 5 minutes, season with salt and garnish with coriander.",
+        "Heat a non-stick pan, pour batter and spread thinly to form a dosa.",
+        "Place the potato filling inside, fold and cook for 2 more minutes.",
+        "Serve hot with chutney and sambar."
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Chocolate Chip Cookies",
+      "mealType": "snacks",
+      "img": "chip.jpg",
+      "difficulty": "easy",
+      "description": "Soft and chewy cookies loaded with chocolate chips, perfect for a sweet treat.",
+      "author": "by Food18",
+      "total_ingredients": 8,
+      "calories": 250,
+      "level": "easy",
+      "ingredients": [
+        "1 cup all-purpose flour",
+        "1/2 tsp baking soda",
+        "1/4 tsp salt",
+        "1/2 cup unsalted butter, softened",
+        "1/2 cup brown sugar",
+        "1/4 cup white sugar",
+        "1 egg",
+        "1 cup chocolate chips"
+      ],
+      "preparation": [
+        "Preheat oven to 350°F (175°C).",
+        "Mix flour, baking soda, and salt in a bowl.",
+        "In another bowl, cream butter and sugars until smooth.",
+        "Add egg and mix well.",
+        "Gradually add dry ingredients to wet ingredients, then fold in chocolate chips.",
+        "Drop spoonfuls onto baking sheet and bake for 10-12 minutes.",
+        "Cool on wire rack and enjoy."
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Vegetable Stir Fry",
+      "mealType": "lunch",
+      "img": "stir.jpg",
+      "difficulty": "easy",
+      "description": "Quick and healthy stir-fried mixed vegetables with soy sauce and garlic.",
+      "author": "by Food18",
+      "total_ingredients": 7,
+      "calories": 180,
+      "level": "easy",
+      "ingredients": [
+        "1 cup broccoli florets",
+        "1 carrot, sliced",
+        "1 bell pepper, sliced",
+        "1/2 cup snap peas",
+        "2 cloves garlic, minced",
+        "2 tbsp soy sauce",
+        "1 tbsp vegetable oil"
+      ],
+      "preparation": [
+        "Heat oil in a wok or pan over high heat.",
+        "Add garlic and sauté until fragrant.",
+        "Add all vegetables and stir fry for 5-7 minutes until tender-crisp.",
+        "Pour in soy sauce and toss to coat evenly.",
+        "Serve hot with rice or noodles."
+      ]
+    }
+  ],
+  "register_user": [
+    {
+      "id": "5e2f",
+      "name": "ji",
+      "email": "ji@gmail.com",
+      "password": "ji",
+      "Confirm_password": "ji"
+    },
+    {
+      "id": "a013",
+      "name": "pri",
+      "email": "j@gmail.com",
+      "password": "po",
+      "Confirm_password": "po"
+    },
+    {
+      "id": "05ee",
+      "name": "priya",
+      "email": "laxmi@gmail.com",
+      "password": "pri123",
+      "Confirm_password": "pri123"
+    }
   ]
 }

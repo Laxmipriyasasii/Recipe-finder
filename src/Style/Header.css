@@ -6,3 +6,23 @@ header {
   z-index: 1000; /* ensures it's on top of other elements */
   background-color: white; /* or any color */
 }
+.nav-list{
+padding: 5px 20px 0 0;
+color:#9ea3a3;
+font-weight: 400;
+text-transform: capitalize;
+}
+.nav-list:hover{
+color:#833AB4;
+}
+.logi{
+  background-color: #833AB4;
+  color:white;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+.logi:hover{
+ background-color: white;
+  color: #833AB4;
+  border:1px solid #833AB4;
+}
