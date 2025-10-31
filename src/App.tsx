@@ -4,19 +4,21 @@ import SingleRecipe from './components/SingleRecipe';
 import Header from './components/Header';
 import Login from './components/Login';
 import Register from './components/Register';
+import Allrecipes from './components/Allrecipes';
+import Carousel from './components/Carousel';
 
 
 export default function App() {
-  
   return (
     <>
       <Router>
-       
-         <HeaderWrapper/>
+        <HeaderWrapper/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path='/register' element={<Register/>}/>
+          <Route path='/caro' element={<Carousel/>}/>
+          <Route path='/recipes' element={<Allrecipes/>}/>
           <Route path="/recipe/:id" element={<SingleRecipe />} />
         </Routes>
       </Router>

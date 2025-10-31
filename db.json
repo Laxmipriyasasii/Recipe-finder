@@ -8,6 +8,7 @@
       "difficulty": "easy",
       "description": "A classic juicy beef burger with fresh lettuce, tomato, and cheese.",
       "author": "by Food18",
+      "total_time": "20 mins",
       "total_ingredients": 7,
       "calories": 450,
       "level": "easy",
@@ -39,6 +40,8 @@
       "author": "by Food18",
       "total_ingredients": 10,
       "calories": 350,
+      "total_time": "45 mins",
+
       "level": "hard",
       "ingredients": [
         "250g paneer cubes",
@@ -65,6 +68,7 @@
       "id": "3",
       "name": "Salad",
       "mealType": "lunch",
+      "total_time": "10 mins",
       "img": "salad.jpg",
       "difficulty": "easy",
       "description": "A fresh mixed greens salad with seasonal vegetables and a light dressing.",
@@ -96,6 +100,7 @@
       "description": "Spicy and crispy fried chicken pieces marinated with special spices.",
       "author": "by Food18",
       "total_ingredients": 8,
+      "total_time": "2 hrs 15 mins",
       "calories": 400,
       "level": "medium",
       "ingredients": [
@@ -124,6 +129,7 @@
       "description": "A warm and comforting vegetable soup perfect for cold days.",
       "author": "by Food18",
       "total_ingredients": 7,
+       "total_time": "40 mins",
       "calories": 150,
       "level": "easy",
       "ingredients": [
@@ -152,6 +158,7 @@
       "description": "Golden and crispy french fries, a perfect snack or side dish.",
       "author": "by Food18",
       "total_ingredients": 3,
+      "total_time": "50 mins",
       "calories": 300,
       "level": "easy",
       "ingredients": [
@@ -174,6 +181,7 @@
       "difficulty": "medium",
       "description": "Fluffy pancakes served with syrup and fresh fruits for a delightful breakfast.",
       "author": "by Food18",
+      "total_time": "20 mins",
       "total_ingredients": 8,
       "calories": 350,
       "level": "medium",
@@ -207,6 +215,7 @@
       "total_ingredients": 12,
       "calories": 550,
       "level": "hard",
+      "total_time": "1 hr 45 mins",
       "ingredients": [
         "2 cups basmati rice",
         "500g chicken pieces",
@@ -245,6 +254,7 @@
       "total_ingredients": 10,
       "calories": 300,
       "level": "medium",
+      "total_time": "10 mins",
       "ingredients": [
         "1 cup rice",
         "1/2 cup urad dal (split black gram)",
@@ -269,7 +279,7 @@
     },
     {
       "id": "10",
-      "name": "Chocolate Chip Cookies",
+      "name": "Choco Cookies",
       "mealType": "snacks",
       "img": "chip.jpg",
       "difficulty": "easy",
@@ -277,6 +287,7 @@
       "author": "by Food18",
       "total_ingredients": 8,
       "calories": 250,
+      "total_time": "25-30 mins",
       "level": "easy",
       "ingredients": [
         "1 cup all-purpose flour",
@@ -308,6 +319,7 @@
       "author": "by Food18",
       "total_ingredients": 7,
       "calories": 180,
+      "total_time": "17 mins",
       "level": "easy",
       "ingredients": [
         "1 cup broccoli florets",
@@ -348,6 +360,20 @@
       "email": "laxmi@gmail.com",
       "password": "pri123",
       "Confirm_password": "pri123"
+    },
+    {
+      "id": "70d2",
+      "name": "Iniyaazh",
+      "email": "ini@gmail.com",
+      "password": "ini",
+      "Confirm_password": "ini"
+    },
+    {
+      "id": "cb51",
+      "name": "nanda",
+      "email": "nanda@gmail.com",
+      "password": "12",
+      "Confirm_password": "12"
     }
   ]
 }

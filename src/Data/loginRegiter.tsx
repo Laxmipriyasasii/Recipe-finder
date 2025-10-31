@@ -18,17 +18,16 @@ export const navBar=[
   title:'home',
   },
   {id:'recipes',
-  link:'/',
+  link:'/recipes',
   title:'recipes'
   },
   {id:'about',
     link:'/',
     title:'about'
-  },{
-    id:'login',
-    link:'/login',
-    title:'logout',
-    className:'nav-list logi'
+  },
+   {id:'saved',
+    link:'/saved',
+    title:'saved'
   }
 ]
 export const registerField = [

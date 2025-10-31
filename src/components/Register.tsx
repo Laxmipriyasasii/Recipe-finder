@@ -15,17 +15,17 @@ import TextField from '@mui/material/TextField';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { registerField } from '../Data/loginRegiter';
+import {logout } from '../loginSlice';
+import {useDispatch } from 'react-redux';
 type FormDataType = {
   name: string;
   email: string;
   password: string;
   Confirm_password: string;
-   [key: string]: string;
+  [key: string]: string;
 };
-
-
-
 export default function Register() {
+  const dispatch=useDispatch();
  const [formData,setFormdata] = useState<FormDataType>({
     name: '',
     email: '',
@@ -43,7 +43,9 @@ export default function Register() {
   const handleMouseUpPassword = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
   };
-
+const continue_guest=()=>{
+    dispatch(logout())
+  }
   const handlechange=(e:any)=>{
      setFormdata({...formData,
       [e.target.id]:e.target.value})
@@ -170,13 +172,10 @@ const checkEmailExists = async (email: string) =>{
         
 {success && <p className='success-msg green input-field'>{success}</p>}
  {err && <p className='error-msg red input-field'>{err}</p>}
-
-          <Link to="/" className='text-decoration input-field' ><h5 className='mb-4 purple  title'>CONTINUE AS GUEST</h5></Link>
+          <Link to="/" className='text-decoration input-field' onClick={continue_guest} ><h5 className='mb-4 purple  title'>CONTINUE AS GUEST</h5></Link>
           <Button variant="contained" className='login-btn' type="submit" onClick={registerBtn}>Sign-Up</Button>
           <h5 className='login-text title ternary'>Already a member?
-            <Link to="/login" className=' text-decoration'><span className='orangish'>Sign-In</span></Link></h5>
-         
-
+          <Link to="/login" className=' text-decoration'><span className='orangish'> Sign-In</span></Link></h5>
         </form>
       </div>
     </div>

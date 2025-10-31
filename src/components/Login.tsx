@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { use } from 'react';
 import loginImage from '../assets/login3.jpg';
 import '../Style/Login.css';
 import TextField from '@mui/material/TextField';
@@ -14,25 +14,39 @@ import InputAdornment from '@mui/material/InputAdornment';
 import FormControl from '@mui/material/FormControl';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
-type formDataType = {
+import { useDispatch,useSelector } from 'react-redux';
+import { login,logout } from '../loginSlice';
+type formDataType = {  
+  name:string,
   email: string,
   password: string,
   [key: string]: string;
 }
 export default function Login() {
+  const dispatch=useDispatch();
+  
+  
   const Navigate = useNavigate();
+   const [Uname,setName]=useState('');
   const [err, setErr] = useState('');
   const [formData, setFormData] = useState<formDataType>({
+    name:'',
     email: '',
     password: ''
   });
+ 
   const handlechange = (e: any) => {
     setFormData({
       ...formData,
       [e.target.id]: e.target.value
     })
   }
-
+  const continue_guest=()=>{
+    dispatch(logout())
+  }
+//  const handleLogin=()=>{
+//   dispatch(login({name:formData.n}))
+//  } 
   const [showPassword, setShowPassword] = useState(false);
   const handleClickShowPassword = () => setShowPassword((show) => !show);
   const handleMouseDownPassword = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -69,10 +83,12 @@ export default function Login() {
         return setErr("Email does not exist.Please sign up.");
       }
       const user = response.data[0];
-
+      setName(user.name)
+      
       if (user.password !== formData.password) {
         return setErr("Incorrect password. Please try again.");
       }
+     dispatch(login({ name: user.name, email: user.email }))
       Navigate('/')
 
     }
@@ -83,7 +99,8 @@ export default function Login() {
     console.log('logged user', formData);
     setFormData({
       email: '',
-      password: ''
+      password: '',
+      name:''
     });
     setErr('');
   }
@@ -144,10 +161,10 @@ export default function Login() {
 
 
 
-          <Link to="/" className='text-decoration input-field' ><h5 className='mb-4 purple  title'>CONTINUE AS GUEST</h5></Link>
-          <Button variant="contained" className='login-btn' type="submit">Sign-In</Button>
+          <Link to="/" className='text-decoration input-field' onClick={continue_guest}><h5 className='mb-4 purple  title'>CONTINUE AS GUEST</h5></Link>
+          <Button variant="contained" className='login-btn' type="submit" >Sign-In</Button>
           <h5 className='login-text title ternary'>Not a member?
-            <Link to="/register" className=' text-decoration'><span className='orangish'>Sign-Up</span></Link></h5>
+            <Link to="/register" className=' text-decoration'><span className='orangish'> Sign-Up</span></Link></h5>
 
 
 

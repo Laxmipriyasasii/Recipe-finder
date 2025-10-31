@@ -2,13 +2,25 @@ import { Button, Container, Grid, Stack } from '@mui/material'
 import '../App.css'
 import { useEffect, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
 import PropagateLoader from "react-spinners/PropagateLoader";
 import type { Recipe } from './recipe.type';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import type { RootState } from '../store'
+import Carousel from './Carousel';
+import New_recipe from './New_recipe';
+import Todayrecipe from './Todayrecipe';
+
 
 export default function Home() {
+    const dispatch = useDispatch();
+
+    // Access user state from Redux store using useSelector
+    const user = useSelector((state: RootState) => state.user);
+    const { name, email, isAuthenticated } = user;
+    console.log(name);
     const navigate = useNavigate()
     const [allRecipes, setAllRecipes] = useState<Recipe[]>([]);
     const [recipe, setRecipe] = useState<Recipe[]>([]);
@@ -20,7 +32,7 @@ export default function Home() {
     const [mealtype, setMealtype] = useState('all recipe')
     const [error, setError] = useState("");
     const [save, setSave] = useState<Recipe[]>([]);
-    const [savedata, setSavedata] =  useState<Recipe[]>([]);
+    const [savedata, setSavedata] = useState<Recipe[]>([]);
     useEffect(() => {
         axios.get('http://localhost:3001/recipes')
             .then(res => {
@@ -36,12 +48,12 @@ export default function Home() {
     }, [])
     useEffect(() => {
         setmessage('Loading')
-        const timer = setTimeout(() => {
+        
             setDelay(recipe)
             setmessage(null)
             console.log("delayed value", delay)
-        }, 1500);
-        return () => clearTimeout(timer);
+       
+        
     }, [recipe])
 
     const filteredData = delay.filter((recipe: any) => {
@@ -66,7 +78,7 @@ export default function Home() {
         const selectedRecipe = allRecipes.find((recipe: Recipe) => recipe.id === id);
         console.log("selectedRecipe", selectedRecipe)
         if (selectedRecipe) {
-           
+
             setSave((prevSave) => {
                 // Log state directly inside the updater function (this is the state after the update)
                 const updatedSave = [...prevSave, selectedRecipe];
@@ -76,7 +88,7 @@ export default function Home() {
             });
             console.log("save", save)
         }
-       
+
 
     }
     const handleClick = (id: any) => {
@@ -86,9 +98,7 @@ export default function Home() {
     return (
 
         <>
-
             <Stack className='stack'>
-
                 <div className="banner">
                     <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', width: '1000px' }}>
                         <h1 className='title title2'>Your Desired Dish?</h1>
@@ -96,21 +106,36 @@ export default function Home() {
                         <p>search any recipe e.g. burger, pizza, sandwich, toast...</p>
                     </div>
                 </div>
+               
                 <div className='recipess'>
-                    <Grid container spacing={0}>
-                        {meal.map((meal) => {
+                    {/* <div style={{ display: 'flex', alignItems: 'center'}}>
+                        <span className="material-symbols-outlined orangish">
+                        local_dining
+                    </span>
+                    <h2 className='recipe-list orangish subtitle'>Recipes for You</h2>
+                    </div> */}
+                    <div className='log2'>
+                        <span className="material-symbols-outlined title-icon">
+                            local_dining
+                        </span>
+                        <h1 className=' title orangish'>Find Your Next Meal</h1>
 
+                    </div>
+
+                    
+                    {/* <Grid container spacing={0}>
+                        {meal.map((meal) => {
                             return (
                                 <Grid size={{ xs: 12, md: 2.4, lg: 2.4 }} className={`border-bottom text-center pad ternary ${mealtype === meal ? 'selected' : 'none'}`} onClick={() => Mealtype(meal)}>{meal}</Grid>
                             )
                         })}
+                    </Grid> */}
 
 
-                    </Grid>
                     {error && <div className='ternary text-center flex'><span className="material-symbols-outlined error">
                         error
                     </span><h4 className='err-text'>{error}</h4></div>}
-                    <Grid container spacing={6} className='recipe-list' >
+                    <Grid container spacing={6} className='' >
                         {message && error === "" && <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', width: '1000px' }}>
                             <PropagateLoader color="#833AB4" size={20} className='padding' /></div>}
                         {(showall ? filteredData : filteredData.slice(0, 6)).map((data: any) => {
@@ -122,8 +147,8 @@ export default function Home() {
                                 <Grid size={{ xs: 12, md: 6, lg: 4 }} className="c recipe-item">
                                     <img src={`../src/assets/${data.img}`} className='food-image'></img>
                                     <div className='flex space-between pad-10'><h3 className='ternary'>{data.name}</h3>
-                                    {save.some((item) => item.id === data.id) ? <FavoriteIcon className='favorite-icon red' onClick={() => addtofavorite(data.id)} /> : <FavoriteBorderOutlinedIcon className='favorite-icon ternary' onClick={() => addtofavorite(data.id)} />}
-</div>
+                                        {save.some((item) => item.id === data.id) ? <FavoriteIcon className='favorite-icon red' onClick={() => addtofavorite(data.id)} /> : <FavoriteBorderOutlinedIcon className='favorite-icon ternary' onClick={() => addtofavorite(data.id)} />}
+                                    </div>
                                     <p className='ternary pad-10-top'>{data.description}</p>
                                     <Button variant="contained" className='view' onClick={() => handleClick(data.id)} >View recipe</Button>
                                 </Grid>
@@ -131,15 +156,40 @@ export default function Home() {
                         })}
 
                     </Grid>
+                    <div className='center pad-20'><Link to='/recipes' className='mar-15'>
+                        <Button variant="contained" className='view1'  >Explore All Recipes<span className="material-symbols-outlined">
 
-                    {mealtype === 'all recipe' && message === null && error === "" &&
-                        <div className='flex'>
-                            <span className={`material-symbols-outlined showAll`} onClick={() => setShowall(prev => !prev)}>
-                                {showall ? 'north' : 'south'}
-                            </span>
-                        </div>
-                    }
+                            double_arrow</span></Button>
+                    </Link>
+                    </div>
+
+
+
                 </div>
+                  <div className="recipess pad-10">
+                 <div className='log2 '>
+                        <span className="material-symbols-outlined title-icon">
+                            local_dining
+                        </span>
+                        <h1 className=' title orangish mar-0'>Newly Added recipes</h1>
+
+                    </div>
+                    <New_recipe/>
+               </div>
+               <div className="bg-black">
+                 
+                    <Todayrecipe/>
+               </div>
+               <div className="recipess">
+                 <div className='log2 '>
+                        <span className="material-symbols-outlined title-icon">
+                            local_dining
+                        </span>
+                        <h1 className=' title orangish mar-0'>Newly Added recipes</h1>
+
+                    </div>
+                    <Carousel/>
+               </div>
 
             </Stack>
         </>

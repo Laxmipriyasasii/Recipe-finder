@@ -1,13 +1,38 @@
-
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 .search {
     border: 1px solid #050504;
-    
-   
     padding: 10px;
     width: 50%;
     border-radius: 10px;
     justify-content: center;
     font-size: 15px;
+}
+.back{
+    background-color: #833AB4 !important;
+}
+
+.search1 {
+    border: 1px solid #833AB4;
+    padding: 10px;
+    width: 30%;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 15px;
+}
+.search1:focus{
+     border: 2px solid #833AB4 !important;
+     outline: none;
+}
+.new_rec:hover{
+    color: #833ab4 !important;;
+}
+.caro-img{
+    height: 158px !important;
+}
+.flex-center{
+    display: flex !important;
+    justify-content: center !important;
 }
 .green{
     color:green
@@ -21,7 +46,7 @@
   
 }
 .stack{
-    padding-bottom:20px;
+    padding-bottom:20px ;
 }
 .flex{
     align-items: center;
@@ -35,9 +60,26 @@
     gap:10px;
 
 }
+.log2{
+        display: flex;
+    align-items: center;
+    gap:10px;
+
+}
 .logo{
     font-size: 50px;
     color:rgba(253, 29, 29, 1)
+}
+.title-icon{
+  font-size: 45px;
+    color:#833AB4;
+     letter-spacing: 2px;
+     font-weight: 100;
+}
+.center{
+     display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .title{
     letter-spacing: 2px;
@@ -45,8 +87,17 @@
      color:#9ea3a3;
     
 }
+.mar-0{
+    margin: 0;
+}
+.rec{
+    padding-top:10px !important;
+}
 .title2{
      margin-top: 0 !important;
+}
+.pad-20{
+    padding: 20px;
 }
 .pad-10{
  padding: 10px;
@@ -67,6 +118,21 @@
   border:1px solid rgba(253, 29, 29, 1) !important;
 }
 
+.view1{
+    color:rgba(253, 29, 29, 1) !important ;  
+  background-color: white !important;
+  border:1px solid rgba(253, 29, 29, 1) !important;
+    text-transform: capitalize !important;
+    margin-bottom: 15px !important;
+    margin-left:10px !important;
+    font-weight: 700 !important;
+}
+.view1:hover{
+  color:white !important ;  
+  background-color: rgba(253, 29, 29, 1)!important;
+  border:1px solid rgba(253, 29, 29, 1) !important;
+}
+
 .search:focus {
    border: 2px solid #1a1919 !important;
     outline: none;
@@ -84,6 +150,7 @@
 }
 .selected{
     color:rgba(253, 29, 29, 1) !important;
+    
     border-bottom: 2px solid rgba(253, 29, 29, 1);
 }
 .width{
@@ -101,6 +168,11 @@
     background: #833AB4;
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 80%, rgba(252, 176, 69, 1) 100%);
 
+}
+.subtitle{
+    margin: 0 !important;
+    padding-bottom: 0px !important;
+    font-size: 30px;
 }
 
 
@@ -120,7 +192,9 @@
 .sub-head{
     color:#9ea3a3;
 }
-
+.capitalize{
+    text-transform: capitalize;
+}
 .text-search {
     height: 100vh;
 }
@@ -128,10 +202,22 @@
 .recipess {
     padding: 0px 120px;
 }
+.mar-15{
+        margin-top: 15px;
+}
+.mar-0{
+margin: 0;
+}
 .pad{
     padding:20px;
     font-size: large;
     text-transform: capitalize;
+}
+.fa-10{
+    font-weight: 500;
+}
+.font-large{
+    font-size: large;
 }
 .pad:hover{
 background-color: #ebeeee;
@@ -167,7 +253,23 @@ color: rgba(253, 29, 29, 1);
     transform: scale(1.05); /* Slight zoom on hover */
   cursor: pointer;
 }
-
+.marque{
+ box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+      width: 250px;
+ 
+}
+.marque:hover{
+    transform: scale(1.05); /* Slight zoom on hover */
+  cursor: pointer;
+}
+.purple{
+    color:#833AB4;
+}
+.bg-black{
+  background-color: #050504;
+  color:#ebeeee
+}
 input:focus {
     border-color: blue;
     background-color: white;
@@ -187,6 +289,12 @@ input:-webkit-autofill {
 }
 .padding{
     padding: 10px !important;
+}
+.cov  {
+  padding-bottom: 3rem;
+  background-color: #833AB4;
+  color:black !important;
+  width:300px !important;
 }
 @media (max-width:899px) {
 .food-image {

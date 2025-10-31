@@ -9,6 +9,7 @@
   total_ingredients: number;
   calories: number;
   level: string;
+  total_time:string,
   ingredients: string[];
   preparation: string[];
   isFavorite?: boolean;  // Optional field for favorite status
