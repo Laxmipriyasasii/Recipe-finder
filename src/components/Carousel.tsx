@@ -39,8 +39,8 @@ export default function Carousel() {
       <Slider {...settings}>
         {recipe.slice(-6).map((data) => (
           <div className="pad-10 flex-center" onClick={() => goToRecipe(data.id)}>
-            <div className="c  marque">
-              <img src={`../src/assets/${data.img}`} className='food-image caro-img'></img>
+            <div className="c  marque ">
+              <img src={`../src/assets/${data.img}`} className='food-image caro-img recipe-img'></img>
               <div className='flex space-between pad-10'><div style={{display:'flex',flexDirection:'column'}}><h4 className='ternary new_rec mar-0 err-text fa-10'>{data.name}</h4>
               <div style={{display:'flex',flexDirection:'row',gap:'2px'}}>
                 <span className="material-symbols-outlined purple font-large">schedule </span>

@@ -84,7 +84,7 @@
 .title{
     letter-spacing: 2px;
 }.title1{
-     color:#9ea3a3;
+     color:#787d7d;
     
 }
 .mar-0{
@@ -98,6 +98,16 @@
 }
 .pad-20{
     padding: 20px;
+}
+.pad-30{
+    padding: 30px;
+}
+.recipe-img {
+  opacity: 0.6;
+}
+
+.recipe-img:hover {
+  opacity: 1.0;
 }
 .pad-10{
  padding: 10px;
@@ -160,17 +170,29 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    
-
-
-    
     display: flex;
-    height:300px;
+    height:350px;
     color:white;
     position: relative;
-    background: #833AB4;
-    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 80%, rgba(252, 176, 69, 1) 100%);
+    background-image: url('./assets/banner.jpg');
+    background-size: cover;
+}
+.banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 10px;
+  pointer-events: none;
+  z-index: 0; 
+}
 
+.banner > div {
+  position: relative;
+  z-index: 1;
 }
 .subtitle{
     margin: 0 !important;
@@ -184,6 +206,7 @@
 }
 .orangish{
     color: rgba(253, 29, 29, 1);
+ 
 }
 
 
@@ -246,6 +269,7 @@ color: rgba(253, 29, 29, 1);
 }
    
 .recipe-item {
+ 
     border-radius: 5px;
     background-color: white;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
@@ -285,10 +309,16 @@ input:-webkit-autofill {
     box-shadow: 0 0 0 1000px white inset !important;
     -webkit-text-fill-color: black !important;
 }
+.link-recipe{
+
+}
+.pad-bottom{
+    padding-bottom: 10px;
+}
 
 .food-image {
     width: 100%;
-    height: 219px;
+    height: 170px;
 }
 .padding{
     padding: 10px !important;

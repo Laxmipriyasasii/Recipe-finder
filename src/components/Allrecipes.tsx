@@ -89,10 +89,8 @@ export default function Allrecipes() {
         <>
             <div className="recipess rec">
                 <div className='log2 ' style={{ display: 'flex', justifyContent:'space-between'}}>
-<div className="log"><span className="material-symbols-outlined title-icon">
-                            local_dining
-                        </span>
-                    <h1 className=' title orangish mar-0 capitalize'>explore recipes by categories</h1></div>
+<div className="">
+                    <h3 className=' title orangish mar-0 capitalize'>explore recipes by categories</h3></div>
 <input type='search' placeholder='Search your recipe...' className='search1' id='search' value={query} onChange={(e) => setQuery(e.target.value)} />
                 </div>
 
@@ -103,7 +101,7 @@ export default function Allrecipes() {
                         )
                     })}
                 </Grid>
-                <Grid container spacing={6} className='pad-20' >
+                <Grid container spacing={4} className='pad-20' >
                     {message && error === "" && <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', width: '1000px' }}>
                         <PropagateLoader color="#833AB4" size={20} className='padding' /></div>}
                     {filteredData.map((data: any) => {
@@ -112,14 +110,14 @@ export default function Allrecipes() {
 
                         return (
 
-                            <Grid size={{ xs: 12, md: 6, lg: 4 }} className="c recipe-item">
-                                <img src={`../src/assets/${data.img}`} className='food-image'></img>
-                                <div className='flex space-between pad-10'><h3 className='ternary'>{data.name}</h3>
-                                    {save.some((item) => item.id === data.id) ? <FavoriteIcon className='favorite-icon red' onClick={() => addtofavorite(data.id)} /> : <FavoriteBorderOutlinedIcon className='favorite-icon ternary' onClick={() => addtofavorite(data.id)} />}
-                                </div>
-                                <p className='ternary pad-10-top'>{data.description}</p>
-                                <Button variant="contained" className='view' onClick={() => handleClick(data.id)} >View recipe</Button>
-                            </Grid>
+                              <Grid size={{ xs: 12, md: 4, lg: 3 }} className="c recipe-item rec">
+                                    <img src={`../src/assets/${data.img}`} className='food-image '></img>
+                                    <div className='flex space-between pad-10'><h4 className='ternary mar-0'>{data.name}</h4>
+                                        {save.some((item) => item.id === data.id) ? <FavoriteIcon className='favorite-icon red' onClick={() => addtofavorite(data.id)} /> : <FavoriteBorderOutlinedIcon className='favorite-icon ternary' onClick={() => addtofavorite(data.id)} />}
+                                    </div>
+                                    <p className='ternary mar-0 pad-10-top'>{data.description}</p>
+                                    <Button  className='view1' onClick={() => handleClick(data.id)} >View recipe</Button>
+                                </Grid>
                         )
                     })}
 

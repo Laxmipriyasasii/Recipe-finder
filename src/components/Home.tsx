@@ -101,7 +101,7 @@ export default function Home() {
             <Stack className='stack'>
                 <div className="banner">
                     <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', width: '1000px' }}>
-                        <h1 className='title title2'>Your Desired Dish?</h1>
+                        <h1 className='title title2'>Your Desired <span className='orangish'>Dish</span>?</h1>
                         <input type='search' placeholder='Search your recipe...' className='search' id='search' value={query} onChange={(e) => setQuery(e.target.value)} />
                         <p>search any recipe e.g. burger, pizza, sandwich, toast...</p>
                     </div>
@@ -114,11 +114,10 @@ export default function Home() {
                     </span>
                     <h2 className='recipe-list orangish subtitle'>Recipes for You</h2>
                     </div> */}
-                    <div className='log2'>
-                        <span className="material-symbols-outlined title-icon">
-                            local_dining
-                        </span>
-                        <h1 className=' title orangish'>Find Your Next Meal</h1>
+                    <div className='pad-30'>
+                       
+                        <h3 className=' title orangish text-center pad-10 mar-0'>Find Your Next Meal</h3>
+                        <p className='ternary text-center mar-0'>Whether you're a novice or an expert in the Kitchen, there's somethimg here for everyone</p>
 
                     </div>
 
@@ -135,38 +134,45 @@ export default function Home() {
                     {error && <div className='ternary text-center flex'><span className="material-symbols-outlined error">
                         error
                     </span><h4 className='err-text'>{error}</h4></div>}
-                    <Grid container spacing={6} className='' >
+                    <Grid container spacing={4} className='' >
                         {message && error === "" && <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', width: '1000px' }}>
                             <PropagateLoader color="#833AB4" size={20} className='padding' /></div>}
-                        {(showall ? filteredData : filteredData.slice(0, 6)).map((data: any) => {
+                        {(showall ? filteredData : filteredData.slice(0, 8)).map((data: any) => {
                             // const arr = data;
                             // console.log("arr", arr)
 
                             return (
 
-                                <Grid size={{ xs: 12, md: 6, lg: 4 }} className="c recipe-item">
-                                    <img src={`../src/assets/${data.img}`} className='food-image'></img>
-                                    <div className='flex space-between pad-10'><h3 className='ternary'>{data.name}</h3>
+                                 <Grid size={{ xs: 12, md: 4, lg: 3 }} className="c recipe-item rec">
+                                    
+                                        <img src={`../src/assets/${data.img}`} className='food-image '></img>
+                                        <div className=''>
+                                    <div className='flex space-between pad-10'><h4 className='ternary mar-0'>{data.name}</h4>
                                         {save.some((item) => item.id === data.id) ? <FavoriteIcon className='favorite-icon red' onClick={() => addtofavorite(data.id)} /> : <FavoriteBorderOutlinedIcon className='favorite-icon ternary' onClick={() => addtofavorite(data.id)} />}
                                     </div>
-                                    <p className='ternary pad-10-top'>{data.description}</p>
-                                    <Button variant="contained" className='view' onClick={() => handleClick(data.id)} >View recipe</Button>
+                                    <p className='ternary mar-0 pad-10-top'>{data.description}</p>
+                                    <Link  to={`/recipes/${data.id}`} className='orangish text-decoration link-recipe' >View recipe </Link>
+                                    </div>
                                 </Grid>
                             )
                         })}
 
                     </Grid>
                     <div className='center pad-20'><Link to='/recipes' className='mar-15'>
-                        <Button variant="contained" className='view1'  >Explore All Recipes<span className="material-symbols-outlined">
-
-                            double_arrow</span></Button>
+                        <Button variant="contained" className='view'  >Explore All Recipes <span className="material-symbols-outlined ">
+                            double_arrow
+                        </span></Button>
                     </Link>
                     </div>
 
 
 
                 </div>
-                  <div className="recipess pad-10">
+                 <div className="bg-black">
+                 
+                    <Todayrecipe/>
+               </div>
+                  {/* <div className="recipess pad-10">
                  <div className='log2 '>
                         <span className="material-symbols-outlined title-icon">
                             local_dining
@@ -175,23 +181,26 @@ export default function Home() {
 
                     </div>
                     <New_recipe/>
-               </div>
-               <div className="bg-black">
-                 
-                    <Todayrecipe/>
-               </div>
-               <div className="recipess">
-                 <div className='log2 '>
-                        <span className="material-symbols-outlined title-icon">
-                            local_dining
-                        </span>
-                        <h1 className=' title orangish mar-0'>Newly Added recipes</h1>
+               </div> */}
+              
+               <div className="recipess " >
+               <div style={{paddingBottom:'30px'}}>
+
+
+                <div className='pad-30'>
+                       
+                        <h3 className=' title orangish text-center pad-10 mar-0'>Recently Added Recipes</h3>
+                        <p className='ternary text-center mar-0'>Explore all our latest recipes of the week</p>
 
                     </div>
                     <Carousel/>
+                    </div>
                </div>
 
             </Stack>
+            <footer style={{height:'300px',backgroundColor:'black'}}>
+
+</footer>
         </>
 
 
